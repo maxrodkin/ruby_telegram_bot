@@ -1,8 +1,8 @@
 require 'telegram/bot'
 require 'net/http'
 
-token = '418120660:AAGFcvlIok7YXDxe1F-C7LBloVm1SA908PQ'#rodkin2bot
-botname = 'rodkin2bot'
+token = '549204761:AAEitWjIXe0NQPZ6ETtwx-Td-EQc7_g4utU'#@rodkin_ruby_2_bot
+botname = 'rodkin_ruby_2_bot'
 Telegram::Bot::Client.run(token) do |bot|
 	bot.listen do |message|
 		case message.text
@@ -28,4 +28,3 @@ Telegram::Bot::Client.run(token) do |bot|
 		end
 	end
 end
-
