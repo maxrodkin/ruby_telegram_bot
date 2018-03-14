@@ -20,7 +20,7 @@ Telegram::Bot::Client.run(token) do |bot|
 				puts req.body
 				response = Net::HTTP.new(host, port).start {|http| http.request(req) }
 				puts response.code
-				bot.api.send_message(chat_id: message.chat.id, text: response.code)
+#				bot.api.send_message(chat_id: message.chat.id, text: response.code)
 #				puts "ok"
 #				bot.api.send_message(chat_id: message.chat.id, text: "ok")
 #			end
